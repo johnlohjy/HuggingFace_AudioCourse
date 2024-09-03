@@ -147,3 +147,12 @@ Then, each frequency spectrum is passed through a mel filterbank, a series of fi
 Just as with a regular spectrogram, it’s common practice to express the strength of the mel frequency components in decibels. This is commonly referred to as a log-mel spectrogram, because the conversion to decibels involves a logarithmic operation
 
 Compared to a standard spectrogram, a mel spectrogram can capture more meaningful features of the audio signal for human perception, making it a popular choice in tasks such as speech recognition, speaker identification, and music genre classification
+
+Y-Axis
+- Mel Scale: The Y-axis represents frequency, but instead of using the standard linear scale (measured in hertz, Hz), it uses the mel scale. The mel scale is designed to mimic the way humans perceive pitch. In human hearing, we are more sensitive to lower frequencies (like bass sounds) and less sensitive to higher frequencies (like treble sounds). The mel scale compresses higher frequencies and stretches lower frequencies to reflect this sensitivity. The Y-axis shows these mel-scaled frequencies. Lower positions on the Y-axis correspond to lower-pitched sounds, while higher positions correspond to higher-pitched sounds. Represents frequency, but on the mel scale. Lower on the axis represents lower frequencies, while higher represents higher frequencies. The mel scale adjusts the spacing of frequencies to better reflect how humans hear sound, with lower frequencies spaced more widely and higher frequencies more compressed.
+- Logarithmic: On a mel spectrogram, lower frequencies are spaced farther apart, while higher frequencies are more closely packed. This is because the mel scale is approximately logarithmic, which means that as frequency increases, larger changes in frequency are required for a change to be perceived by the human ear. Represents time. Moving from left to right corresponds to progressing through the audio signal in time.
+- Colour: The colors in the mel spectrogram indicate how strong or weak a particular frequency component is at a specific time. Different colors in a mel spectrogram represent the amplitude or intensity of the frequencies in the audio signal.
+
+X-Axis
+- Time: The X-axis represents time. It shows how the frequency content of the audio signal changes over time. As you move from left to right along the X-axis, you are moving forward in time. Each vertical slice of the spectrogram corresponds to a specific moment in time.
+
